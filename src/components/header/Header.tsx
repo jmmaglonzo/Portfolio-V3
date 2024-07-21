@@ -1,8 +1,10 @@
 import { DarkMode } from "../theme/Darkmode";
+import Logo from "./Logo";
 
 const Header = () => {
   return (
-    <header className="container flex items-center justify-between">
+    <header className="flex items-center justify-between px-6 py-4">
+      <Logo />
       <DarkMode />
     </header>
   );
