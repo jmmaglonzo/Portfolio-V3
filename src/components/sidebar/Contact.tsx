@@ -1,19 +1,28 @@
 import sideBar from "@/utils/sidebar";
 const Contact = () => {
   return (
-    <div className="mt-6 flex flex-col gap-6">
+    <ul className="mt-6 flex items-center justify-center gap-6 xl:flex-col xl:items-start">
       {sideBar.map((s) => (
-        <a key={s.title} className="flex gap-2" target="_blank" href={s.link}>
-          <div className="inline-flex h-12 w-12 items-center justify-center rounded-md bg-slate-950">
-            {s.icon}
-          </div>
-          <div className="flex flex-col">
-            <span className="text-sm font-semibold">{s.title}</span>
-            <p className="text-ellipsis">{s.value}</p>
-          </div>
-        </a>
+        <li
+          key={s.title}
+          className={`${s.title === "Location" && "hidden xl:block"}`}
+        >
+          <a
+            className="flex flex-col items-center gap-2 xl:flex-row xl:items-start"
+            target="_blank"
+            href={s.link}
+          >
+            <div className="inline-flex size-10 items-center justify-center rounded-md bg-slate-950 lg:size-12">
+              {s.icon}
+            </div>
+            <div className="flex flex-col">
+              <span className="text-xs font-medium">{s.title}</span>
+              <p className="hidden text-ellipsis xl:block">{s.value}</p>
+            </div>
+          </a>
+        </li>
       ))}
-    </div>
+    </ul>
   );
 };
 

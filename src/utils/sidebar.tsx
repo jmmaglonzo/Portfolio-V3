@@ -7,33 +7,33 @@ import { SidebarType } from "@/types/sidebar";
 
 const sideBar: SidebarType[] = [
   {
-    icon: <MdAlternateEmail size={22} />,
-    title: "EMAIL",
+    icon: <MdAlternateEmail className="size-5 lg:size-6" />,
+    title: "Email",
     value: "johnmaglonzo@gmail.com",
     link: "mailto:johnmaglonzo@gmail.com",
   },
   {
-    icon: <IoPhonePortraitOutline size={22} />,
-    title: "PHONE",
+    icon: <IoPhonePortraitOutline className="size-5 lg:size-6" />,
+    title: "Phone",
     value: "+(63) 9126-532-546",
     link: "tel:+639126532546",
   },
 
   {
-    icon: <FaLinkedin size={22} />,
+    icon: <FaLinkedin className="size-5 lg:size-6" />,
     title: "LinkedIn",
     value: "John Mark Maglonzo",
     link: "https://www.linkedin.com/in/jmmaglonzo/",
   },
   {
-    icon: <FaGithub size={22} />,
+    icon: <FaGithub className="size-5 lg:size-6" />,
     title: "Github",
     value: "jmmaglonzo",
     link: "https://github.com/jmmaglonzo",
   },
   {
-    icon: <FaLocationDot size={22} />,
-    title: "LOCATION",
+    icon: <FaLocationDot className="size-5 lg:size-6" />,
+    title: "Location",
     value: "Quezon City",
   },
 ];
