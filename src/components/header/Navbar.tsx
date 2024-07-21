@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <nav>
       <Tabs defaultValue="Projects" className="w-full">
-        <TabsList className="absolute right-0 top-0">
+        <TabsList className="absolute right-0 top-0 bg-secondary">
           <TabsTrigger value="Projects">Projects</TabsTrigger>
           <TabsTrigger value="Resume">Resume</TabsTrigger>
           <TabsTrigger value="Contact">Contact</TabsTrigger>

@@ -1,19 +1,19 @@
 import Image, { StaticImageData } from "next/image";
 import { AspectRatio } from "../ui/aspect-ratio";
 import { Card, CardContent, CardFooter } from "../ui/card";
-import Bradwell from "/public/bradwell.webp";
 interface ProjectCardProps {
   data: {
     name: string;
     image: StaticImageData;
+    link: string;
   };
 }
 
-const ProjectCard = ({ data: { name, image } }: ProjectCardProps) => {
+const ProjectCard = ({ data: { name, image, link } }: ProjectCardProps) => {
   return (
-    <Card className="border-none">
+    <Card className="cursor-pointer border-none duration-200 ease-in-out xl:hover:scale-110">
       <CardContent className="p-2">
-        <a href="">
+        <a href={link} target="_blank">
           <AspectRatio ratio={16 / 9}>
             <Image
               src={image}
