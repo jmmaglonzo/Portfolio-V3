@@ -1,5 +1,5 @@
 import sideBar from "@/utils/sidebar";
-const Contact = () => {
+const SideBarInfo = () => {
   return (
     <ul className="mt-6 flex items-center justify-center gap-6 xl:flex-col xl:items-start">
       {sideBar.map((s) => (
@@ -12,7 +12,7 @@ const Contact = () => {
             target="_blank"
             href={s.link}
           >
-            <div className="inline-flex size-10 items-center justify-center rounded-md bg-slate-950 lg:size-12">
+            <div className="inline-flex size-10 items-center justify-center rounded-md bg-card lg:size-12">
               {s.icon}
             </div>
             <div className="flex flex-col">
@@ -26,4 +26,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default SideBarInfo;
