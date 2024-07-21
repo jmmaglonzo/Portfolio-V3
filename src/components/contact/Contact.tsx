@@ -46,7 +46,11 @@ const Contact = () => {
   };
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} noValidate>
+      <form
+        onSubmit={form.handleSubmit(onSubmit)}
+        noValidate
+        className="space-y-4"
+      >
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           <FormField
             control={form.control}
@@ -83,13 +87,20 @@ const Contact = () => {
             <FormItem>
               <FormLabel>Message</FormLabel>
               <FormControl>
-                <Textarea placeholder="Your Message" {...field} />
+                <Textarea
+                  placeholder="Your Message"
+                  {...field}
+                  rows={15}
+                  className="p-4"
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
           )}
         />
-        <Button type="submit">Submit</Button>
+        <div className="flex justify-end">
+          <Button type="submit">Submit</Button>
+        </div>
       </form>
     </Form>
   );
