@@ -13,6 +13,7 @@ const ProjectCard = () => {
             className="rounded-md object-cover"
             fill
             priority
+            sizes="(min-width: 1520px) 289px, (min-width: 1280px) calc(13.64vw + 84px), (min-width: 1040px) calc(33.18vw - 62px), (min-width: 780px) calc(50vw - 72px), calc(100vw - 96px)"
           />
         </AspectRatio>
         <CardFooter className="flex flex-col items-start p-2">
