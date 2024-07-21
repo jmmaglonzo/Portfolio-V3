@@ -3,9 +3,9 @@ import { GoDotFill } from "react-icons/go";
 
 const Timeline = () => {
   return (
-    <ol className="relative border-s border-gray-200 dark:border-gray-700">
+    <ol className="relative flex flex-col gap-12 border-s border-gray-200 dark:border-gray-700">
       {timeLine.map((t, index) => (
-        <li className="mb-10 ms-6" key={t.title}>
+        <li className="ms-8" key={t.title}>
           <span className="absolute -start-3 flex size-6 items-center justify-center rounded-full bg-gray-500 ring-8 ring-white dark:ring-gray-900">
             <GoDotFill />
           </span>
@@ -20,7 +20,7 @@ const Timeline = () => {
           <time className="mb-2 block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
             {t.date}
           </time>
-          <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+          <p className="text-base font-normal text-gray-500 dark:text-gray-400">
             {t.description}
           </p>
         </li>
