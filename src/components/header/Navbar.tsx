@@ -1,3 +1,4 @@
+import Contact from "../contact/Contact";
 import ProjectGrid from "../project/ProjectGrid";
 import Experience from "../resume/Experience";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
@@ -12,17 +13,21 @@ const Navbar = () => {
           <TabsTrigger value="Contact">Contact</TabsTrigger>
         </TabsList>
         <TabsContent value="Projects">
-          <span className="text-3xl font-bold">Projects</span>
-
+          <span className="mb-10 inline-block text-3xl font-bold">
+            Projects
+          </span>
           <ProjectGrid />
         </TabsContent>
         <TabsContent value="Resume">
-          <span className="mb-12 inline-block text-3xl font-bold">
+          <span className="mb-10 inline-block text-3xl font-bold">
             Experience & Education
           </span>
           <Experience />
         </TabsContent>
-        <TabsContent value="Contact">Contact</TabsContent>
+        <TabsContent value="Contact">
+          <span className="mb-10 inline-block text-3xl font-bold">Contact</span>
+          <Contact />
+        </TabsContent>
       </Tabs>
     </nav>
   );
