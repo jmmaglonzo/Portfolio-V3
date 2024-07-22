@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { useMediaQuery } from "react-responsive";
+
 type Tab = {
   title: string;
   value: string;
@@ -52,7 +53,11 @@ export const Tabs = ({
             }}
             onMouseEnter={() => setHovering(true)}
             onMouseLeave={() => setHovering(false)}
-            className={cn("relative rounded-full px-4 py-2", tabClassName)}
+            className={cn(
+              "relative rounded-full px-4 py-2 transition-colors duration-200",
+              active.value === tab.value && "text-white dark:text-black",
+              tabClassName,
+            )}
             style={{
               transformStyle: "preserve-3d",
             }}
@@ -62,15 +67,13 @@ export const Tabs = ({
                 layoutId="clickedbutton"
                 transition={{ type: "spring", bounce: 0.3, duration: 0.6 }}
                 className={cn(
-                  "absolute inset-0 rounded-full bg-gray-200 dark:bg-zinc-800",
+                  "absolute inset-0 rounded-full bg-[#161925] dark:bg-[#e2e2e2]",
                   activeTabClassName,
                 )}
               />
             )}
 
-            <span className="relative block text-black dark:text-white">
-              {tab.title}
-            </span>
+            <span className="relative block">{tab.title}</span>
           </button>
         ))}
       </div>
