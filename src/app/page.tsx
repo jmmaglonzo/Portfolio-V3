@@ -4,7 +4,7 @@ import Topbar from "@/components/sidebar/Topbar";
 
 export default function Home() {
   return (
-    <main className="container my-[100px] flex flex-col items-stretch justify-center gap-6 xl:mx-auto xl:flex-row">
+    <main className="container flex flex-col items-stretch justify-center gap-6 xl:mx-auto xl:flex-row">
       <Topbar />
       <Sidebar />
       <MainContent />
