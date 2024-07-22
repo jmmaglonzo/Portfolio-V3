@@ -6,27 +6,27 @@ import digibite from "/public/digibite-kitchen.webp";
 
 const cards = [
   {
-    name: "Bradwell Sales & Marketing Corp.",
+    title: "Bradwell Sales & Marketing Corp.",
     image: bradwell,
     link: "https://bradwell-fe.vercel.app/",
   },
   {
-    name: "Digibite | Digital Menu",
+    title: "Digibite | Digital Menu",
     image: digibite,
     link: "https://digibite.vercel.app/",
   },
   {
-    name: "GymFit",
+    title: "GymFit",
     image: gymfit,
     link: "https://gymfit-sage.vercel.app/",
   },
   {
-    name: "Omnifood-Ai",
+    title: "Omnifood-Ai",
     image: omnifood,
     link: "https://omnifood-react.vercel.app/",
   },
   {
-    name: "Portfolio v2",
+    title: "Portfolio v1",
     image: portfolio,
     link: "https://lonzo-react.vercel.app/",
   },
