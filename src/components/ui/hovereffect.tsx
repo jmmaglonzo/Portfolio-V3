@@ -31,6 +31,7 @@ export const HoverEffect = ({
         <Link
           href={item?.link}
           key={item?.link}
+          target="_blank"
           className={`group relative block h-full w-full p-2 ${idx === 3 ? "lg:col-span-2" : "lg:h-fit"}`}
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
