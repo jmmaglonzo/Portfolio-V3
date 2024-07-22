@@ -12,7 +12,7 @@ const SideBarInfo = () => {
             target="_blank"
             href={s.link}
           >
-            <div className="inline-flex size-10 items-center justify-center rounded-md bg-card lg:size-12">
+            <div className="inline-flex size-10 items-center justify-center lg:size-12">
               {s.icon}
             </div>
             <div className="flex flex-col">
