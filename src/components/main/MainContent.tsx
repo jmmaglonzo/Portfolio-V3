@@ -1,9 +1,9 @@
-import Navbar from "../header/Navbar";
+import Tab from "../header/Tab";
 
 const MainContent = () => {
   return (
     <div className="relative rounded-md xl:w-[75%] xl:min-w-[75%]">
-      <Navbar />
+      <Tab />
     </div>
   );
 };
