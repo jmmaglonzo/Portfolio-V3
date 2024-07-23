@@ -1,5 +1,5 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Badge } from "../ui/badge";
+import BadgeShine from "../ui/badgeShine";
 const Profile = () => {
   return (
     <div className="flex flex-row items-center justify-center gap-2 xl:flex-col">
@@ -9,9 +9,8 @@ const Profile = () => {
       </Avatar>
       <div className="flex flex-col items-center justify-center gap-1">
         <p className="text-xs lg:text-sm xl:text-base">John Mark C. Maglonzo</p>
-        <Badge className="whitespace-nowrap text-[10px] uppercase">
-          frontend developer
-        </Badge>
+
+        <BadgeShine>Frontend Developer</BadgeShine>
       </div>
     </div>
   );
