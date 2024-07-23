@@ -19,7 +19,7 @@ const Skills = () => {
                   alt="Icons"
                   fill
                   className="object-contain"
-                  sizes="50px"
+                  sizes="24px"
                 />
               </AspectRatio>
             </div>
