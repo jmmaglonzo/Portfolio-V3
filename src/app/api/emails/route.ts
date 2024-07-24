@@ -7,7 +7,7 @@ export async function POST(request: Request) {
 
   try {
     await transporter.sendMail({
-      from: process.env.EMAIL,
+      from: `${name} <${process.env.NODEMAILER_EMAIL}>`,
       replyTo: email,
       to: process.env.EMAIL,
       subject: subject,
