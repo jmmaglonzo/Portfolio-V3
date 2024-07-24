@@ -14,23 +14,9 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "../ui/textarea";
-const formSchema = z.object({
-  name: z
-    .string()
-    .min(3, {
-      message: "Name must be at least 3 characters long",
-    })
-    .max(50, {
-      message: "Name must be less than 50 characters long",
-    }),
-  email: z.string().email({
-    message: "Please enter a valid email address",
-  }),
-  message: z.string().min(10, {
-    message: "Message must be at least 10 characters long",
-  }),
-});
-
+import axios from "axios";
+import { formSchema } from "@/utils/schema";
+import { toast } from "sonner";
 const Contact = () => {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -41,8 +27,14 @@ const Contact = () => {
     },
   });
 
-  const onSubmit = (value: z.infer<typeof formSchema>) => {
-    console.log("handle submit");
+  const onSubmit = async (value: z.infer<typeof formSchema>) => {
+    try {
+      await axios.post("/api/emails", value);
+      toast.success("Message sent successfully!");
+      form.reset();
+    } catch (error) {
+      toast.error("Failed to send message. Please try again.");
+    }
   };
   return (
     <Form {...form}>
@@ -99,7 +91,9 @@ const Contact = () => {
           )}
         />
         <div className="flex justify-end">
-          <Button type="submit">Submit</Button>
+          <Button disabled={form.formState.isSubmitting} type="submit">
+            Submit
+          </Button>
         </div>
       </form>
     </Form>
