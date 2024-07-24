@@ -24,6 +24,7 @@ const Contact = () => {
       name: "",
       email: "",
       message: "",
+      subject: "",
     },
   });
 
@@ -72,6 +73,19 @@ const Contact = () => {
             )}
           />
         </div>
+        <FormField
+          control={form.control}
+          name="subject"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Subject</FormLabel>
+              <FormControl>
+                <Input placeholder="Subject" {...field} />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
         <FormField
           control={form.control}
           name="message"
