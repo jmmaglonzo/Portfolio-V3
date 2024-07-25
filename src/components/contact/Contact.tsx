@@ -96,7 +96,7 @@ const Contact = () => {
                 <Textarea
                   placeholder="Your Message"
                   {...field}
-                  rows={15}
+                  rows={10}
                   className="p-4"
                 />
               </FormControl>
