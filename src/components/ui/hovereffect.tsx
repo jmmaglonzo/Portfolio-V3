@@ -32,7 +32,7 @@ export const HoverEffect = ({
           href={item?.link}
           key={item?.link}
           target="_blank"
-          className={`group relative block h-full w-full p-2 ${idx === 3 ? "lg:col-span-2" : "lg:h-fit"}`}
+          className={`group relative block h-full w-full p-2 ${idx === 3 ? "lg:col-span-2" : ""}`}
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
@@ -54,12 +54,12 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
           <Card>
-            <CardContent className="p-0">
+            <CardContent className="p-1">
               <AspectRatio ratio={16 / 9}>
                 <Image
                   src={item.image}
                   alt="Bradwell"
-                  className="rounded-tl-sm rounded-tr-sm object-cover"
+                  className="rounded-tl-xl rounded-tr-xl object-cover"
                   fill
                   priority
                 />
