@@ -9,7 +9,7 @@ const Skills = () => {
       <div className="flex flex-wrap items-center gap-3">
         {icons.map((i) => (
           <div
-            className="flex items-center gap-4 rounded-[6px] bg-[#e2e2e2] px-4 py-2 text-black dark:bg-[#161925] dark:text-white"
+            className="flex items-center gap-4 rounded-[6px] bg-[#161925] px-4 py-2 text-white dark:bg-[#e2e2e2] dark:text-black"
             key={i.name}
           >
             <div className="size-6">
