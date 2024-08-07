@@ -1,6 +1,6 @@
 export const timeLine = [
   {
-    title: "Hackathon MVP",
+    title: "Codebility Hackathon MVP",
     date: "July 18, 2024",
     description:
       "Recognized as Most Valuable Player for outstanding effort and technical contributions.",
