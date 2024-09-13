@@ -27,7 +27,7 @@ const cards = [
   {
     title: "Digibite | Digital Menu",
     image: digibite,
-    link: "https://digibite.vercel.app/login",
+    link: "https://github.com/jmmaglonzo/Portfolio-V3",
     stack: [
       "NEXT JS",
       "TAILWIND-CSS",
