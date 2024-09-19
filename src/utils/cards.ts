@@ -27,7 +27,7 @@ const cards = [
   {
     title: "Digibite | Digital Menu",
     image: digibite,
-    link: "https://github.com/jmmaglonzo/Portfolio-V3",
+    link: "https://github.com/jmmaglonzo/E-MENU-FE",
     stack: [
       "NEXT JS",
       "TAILWIND-CSS",
