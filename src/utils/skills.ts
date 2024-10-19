@@ -14,8 +14,6 @@ import git from "/public/icons/git.webp";
 import shadcn from "/public/icons/shadcn.webp";
 import reactform from "/public/icons/react-hook-form.webp";
 import zod from "/public/icons/zod.webp";
-import tanstack from "/public/icons/react-query.webp";
-import zustand from "/public/icons/zustand.webp";
 
 const icons = [
   {
@@ -81,14 +79,6 @@ const icons = [
   {
     name: "Zod",
     icon: zod,
-  },
-  {
-    name: "Tanstack-Query",
-    icon: tanstack,
-  },
-  {
-    name: "Zustand",
-    icon: zustand,
   },
 ];
 
